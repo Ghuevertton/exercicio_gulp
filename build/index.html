@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria Gulp</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .gallery img {
+            width: 100%; /* Define a largura de todas as imagens como 100% */
+            height: 200px; /* Define a altura de todas as imagens como 200px */
+            object-fit: cover; /* Mantém a proporção e corta a imagem se necessário */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="/source/images/birds.jpg" alt="birds">
+        <img src="/source//images/butterfly.jpg" alt="butterfly">
+        <img src="/source//images/hands.png" alt="hands">
+        <img src="/source//images/lilies.jpg" alt="lilies">
+        <img src="/source//images/owl.jpg" alt="owl">
+        <img src="/source//images/street.jpg" alt="street">
+    </div>
+</body>
+</html>
